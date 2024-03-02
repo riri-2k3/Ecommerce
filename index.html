@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Website Structure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="categories">
+      <h2 class="categories-title">Categories</h2>
+      <div class="category">
+        <h3>Snacks</h3>
+      
+        <p>Description of Category 1</p>
+      </div>
+      <div class="category">
+        <h3>Category 2</h3>
+        <p>Description of Category 2</p>
+      </div>
+      <div class="category">
+        <h3>Category 3</h3>
+        <p>Description of Category 3</p>
+      </div>
+    </section>
+
+    <section class="offer">
+      <p>Special Offer: Free Shipping on Orders Over Rs.500!</p>
+    </section>
+
+    <section class="banner">
+      <h2>Featured Products</h2>
+    </section>
+
+    <section class="tabs-section">
+      <ul class="tabs">
+        <li class="tab active" onclick="showTab('tab1')">Tab 1</li>
+        <li class="tab" onclick="showTab('tab2')">Tab 2</li>
+        <li class="tab" onclick="showTab('tab3')">Tab 3</li>
+      </ul>
+
+      <div class="tab-content-container">
+        <div class="tab-content active" id="tab1">
+          <h3>Tab 1 Content</h3>
+          <p>This is the content of tab 1.</p>
+        </div>
+        <div class="tab-content" id="tab2">
+          <h3>Tab 2 Content</h3>
+          <p>This is the content of tab 2.</p>
+        </div>
+        <div class="tab-content" id="tab3">
+          <h3>Tab 3 Content</h3>
+          <p>This is the content of tab 3.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

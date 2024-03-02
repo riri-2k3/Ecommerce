@@ -1,0 +1,175 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  .category {
+    text-align: center;
+    flex-basis: calc(33.33% - 2rem);
+  }
+  
+  .category h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .category p {
+    color: #6c757d;
+  }
+  
+  .offer {
+    color: #fff;
+    background-color: #28a745;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* style.css (continued) */
+
+.banner {
+    background-image: url('https://source.unsplash.com/random/1600x600');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin: 0 0 2rem 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .tabs-section {
+    margin-top: 2rem;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: #333;
+    text-align: center;
+    flex-basis: calc(33.33% - 1rem);
+    transition: background-color 0.2s ease-in-out; /* Add smooth transition effect */
+  }
+  
+  .tab.active {
+    background-color: #fff;
+    color: #28a745;
+  }
+  
+  .tab-content-container {
+    margin-top: 1rem;
+  }
+  
+  .tab-content {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    transition: opacity 0.2s ease-in-out; /* Add smooth fade-in/out effect */
+  }
+  
+  .tab-content.active {
+    display: block;
+    opacity: 1; /* Ensure full opacity for active content */
+  }
+  
+  .tab-content h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .tab-content p {
+    color: #6c757d;
+  }
+  
+  /* Add media queries for responsive design */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%; /* Adapt to smaller screens */
+    }
+  
+    .categories,
+    .tabs {
+      flex-wrap: wrap; /* Wrap content on smaller screens */
+    }
+  
+    .category,
+    .tab {
+      flex-basis: 100%; /* Make elements full width on smaller screens */
+    }
+  
+    .banner {
+      height: 200px; /* Adjust banner height for smaller screens */
+    }
+  }
+  
